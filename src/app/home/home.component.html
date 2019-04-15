@@ -1,0 +1,29 @@
+
+<mat-toolbar color="light" id="menu" class="absolute-menu">
+  <mat-toolbar-row>
+    <img id="logo" class="logo" src="../../assets/logo.png" alt="logo">
+    <span id="title" class="title">Title</span>
+    <span class="example-spacer"></span>
+    <button mat-button>About</button>
+    <button mat-button>Info</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<body (scroll)="onScroll($event)">
+  <div class="parallax-child intro" id="intro">
+    <div fxLayout="column" fxLayout.xs="column" fxLayoutAlign="center">
+      <div fxFlex="100%" fxFlex.xs="100%" fxFlex.md="80%" fxFlex.xl="60%" fxFlex.lg="60%">
+        <app-intro></app-intro>
+      </div>
+      <div fxFlex="100%" fxFlex.xs="100%" fxFlex.md="80%" fxFlex.xl="60%" fxFlex.lg="60%">
+        <app-intro></app-intro>
+      </div>
+      <div fxFlex="100%" fxFlex.xs="100%" fxFlex.md="80%" fxFlex.xl="60%" fxFlex.lg="60%">
+        <app-intro></app-intro>
+      </div>
+      <div fxFlex="100%" fxFlex.xs="100%" fxFlex.md="80%" fxFlex.xl="60%" fxFlex.lg="60%">
+        <app-intro></app-intro>
+      </div>
+    </div>
+  </div>
+</body>
